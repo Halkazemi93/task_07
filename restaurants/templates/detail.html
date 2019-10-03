@@ -5,6 +5,8 @@
         <title>Detail</title>
     </head>
     <body>
+        <a href="{% url 'restaurant-list' %}">View Restaurants</a>
+        <a href="{% url 'restaurant-update' restaurant.id %}">Update</a>
         <ul>
             <li>{{restaurant.name}}</li>
             <li>{{restaurant.description}}</li>
